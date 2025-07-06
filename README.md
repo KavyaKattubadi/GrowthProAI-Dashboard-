@@ -1,26 +1,54 @@
-# GrowthProAI – Full Stack Intern Assignment
+# 📊 GrowthProAI – Full Stack Intern Assignment
 
-This is a mini local business dashboard built with **React + Tailwind CSS** (frontend) and **Node.js + Express** (backend). It simulates how local businesses might visualize SEO and review data.
-
----
-
-## 🔧 Features
-
-- 📥 Business input form (name + location)
-- ⭐ Shows simulated Google rating, reviews, and AI-generated SEO headline
-- 🔁 Regenerate headline feature
-- 🎨 Responsive, mobile-friendly UI using Tailwind CSS
+This project is a **Mini Local Business Dashboard** that simulates how small businesses might view their SEO content and Google Business data — one of GrowthProAI’s core use cases.
 
 ---
 
-## 🧩 Tech Stack
+## 🚀 Live Demo
 
-- Frontend: React, Tailwind CSS, Vite
-- Backend: Node.js, Express
-- API Communication: REST
-- No database (data is simulated)
+- **Frontend:** [https://growthproai-dashboard.vercel.app](https://growthproai-dashboard.vercel.app)  
+- **Backend:** [https://growthproai-backend.onrender.com](https://growthproai-backend.onrender.com)
 
 ---
 
+## 🧰 Tech Stack
 
+**Frontend:**
+- React JS
+- Tailwind CSS
+- Axios
+- React Router DOM
 
+**Backend:**
+- Node.js
+- Express.js
+- CORS
+
+---
+
+## 📦 Features
+
+### 🌐 Frontend
+- Input Form:  
+  - Business Name  
+  - Location  
+- After submission, displays:  
+  - Simulated Google Rating (e.g., 4.3★)  
+  - Number of Reviews  
+  - AI-generated SEO Headline  
+- "Regenerate SEO Headline" Button  
+- Responsive UI using Tailwind CSS  
+- NotFound (404) page
+
+---
+
+### 🔁 Backend
+
+#### `POST /business-data`
+
+**Request:**
+```json
+{
+  "name": "Cake & Co",
+  "location": "Mumbai"
+}
